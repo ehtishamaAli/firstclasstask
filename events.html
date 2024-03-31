@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainings</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div class="events-div">
+        <img class="events-img1" src="events-img.png" alt="events">
+    </div>
+
+
+
+
+    <div class="traning-container">
+        <div class="both-btn">
+        <button class="upcoming-btn" id="upcomingBtn">Upcoming</button>
+        <button class="past-btn" id="pastBtn">Past</button>
+    </div>
+        <div id="traningContent" class="traning-hidden">
+          <!-- Content for both categories -->
+          <div id="upcomingDetails" class="category-details">
+            <!-- Details for Events -->
+           
+            <div class="upcoming-divmain">
+                <div class="upcoming-div1">
+                    <p class="upcoming-div1-p1">n/a</p>
+                    <p class="upcoming-div1-p2">Aug</p>
+                </div>
+                <div class="upcoming-div2">
+                <h3>> Workshop on Python</h3>
+                <img src="ClockCircleOutlined.png" alt="">10:30am-2:30pm
+                <img src="Eventlocation.png" alt="">Air University, Islamabad,pakistan
+                <p>Join us for an informative Python Workshop and dive into the world of programming with one of the most versatile and widely-used programming languages. Python's simplicity and powerful capabilities make it an excellent choice for beginners and experienced developers alike.</p>
+            </div>
+
+            </div>
+          </div>
+          <div id="pastDetails" class="category-details">
+            <!-- Details for Trainings -->
+            
+            <div class="past-divmain">
+                <div class="past-div1">
+                    <p class="past-div1-p1">4</p>
+                    <p class="past-div1-p2">Jul</p>
+                </div>
+                <div class="past-div01">
+                <h3>>Level 1 Block chain Awareness by Romanian Startup</h3>
+                
+                <span><img class="cl-loc" src="ClockCircleOutlined.png" alt="">10:30am-2:30pm</span>
+                <span style="margin-left:20px;"><img class="cl-loc" src="Eventlocation.png" alt="">NIC, Islamabad,pakistan</span>
+                <div class="past-div001">
+                <p class="ppast">Join us for an insightful Level 1 Blockchain Awareness Workshop, hosted by a cutting-edge Romanian startup. Blockchain technology has revolutionized various industries, and this workshop aims to provide you with a foundational understanding of its concepts and applications</p>
+                <img class="pastimg" src="past img 1.png" alt="">
+            </div>
+            </div>
+
+            </div>
+
+<!-- past div 2--------------------- -->
+<div class="past-divmain2">
+    <div class="past-div1">
+        <p class="past-div1-p1">4</p>
+        <p class="past-div1-p2">Jul</p>
+    </div>
+    <div class="past-div01">
+    <h3>>Level 1 Block chain Awareness by Romanian Startup</h3>
+    
+    <span><img class="cl-loc" src="ClockCircleOutlined.png" alt="">08:30am-10:30am</span>
+    <span style="margin-left:20px;"><img class="cl-loc" src="Eventlocation.png" alt="">Air University, Islamabad,pakistan</span>
+    <div class="past-div001">
+    <p class="ppast">As technology evolves, new trends and prospects are emerging within Microsoft's ecosystem, providing youth with exciting possibilities to make a difference and contribute to innovation on a global scale. In this workshop, we explore some of the emerging trends and opportunities for young talents in Microsoft.</p>
+    <img class="pastimg" src="past img2.png" alt="">
+</div>
+</div>
+
+</div>
+
+<!-- past div 3------------- -->
+
+<div class="past-divmain2">
+    <div class="past-div1">
+        <p class="past-div1-p1">7</p>
+        <p class="past-div1-p2">Aug</p>
+    </div>
+    <div class="past-div01">
+    <h3>> Workshop on Flutter</h3>
+    
+    <span><img class="cl-loc" src="ClockCircleOutlined.png" alt="">10:30am-02:30pm</span>
+    <span style="margin-left:20px;"><img class="cl-loc" src="Eventlocation.png" alt="">Air University, Islamabad,pakistan</span>
+    <div class="past-div001">
+    <p class="ppast">Join us for an exciting workshop on Flutter - Google's open-source UI software development toolkit. Flutter is known for its fast development capabilities, expressive and flexible UI, and native performance. Whether you're a beginner or an experienced developer, this workshop offers something for everyone.</p>
+    <img class="pastimg" src="past img3.png" alt="">
+</div>
+</div>
+
+</div>
+
+<!-- past div 4 ------------ -->
+
+<div class="past-divmain2">
+    <div class="past-div1">
+        <p class="past-div1-p1">11</p>
+        <p class="past-div1-p2">Aug</p>
+    </div>
+    <div class="past-div01">
+    <h3>> Workshop on UI/UX Designing</h3>
+    
+    <span><img class="cl-loc" src="ClockCircleOutlined.png" alt="">09:30am-12:30pm</span>
+    <span style="margin-left:20px;"><img class="cl-loc" src="Eventlocation.png" alt="">Air University, Islamabad,pakistan</span>
+    <div class="past-div001">
+    <p class="ppast">Join us for an informative workshop on UI/UX designing. Here you will learn various aspects of UI/UX designing including introduction to figma, Hands on experience on how to create a design in figma, Prototyping in figma, user testing and feedback and finally delivering UI/Ux designs to your developers.</p>
+    <img class="pastimg" src="past img 4.png" alt="">
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      <script>
+
+const upcomingBtn = document.getElementById('upcomingBtn');
+const trainingsBtn = document.getElementById('pastBtn');
+const traningContent = document.getElementById('traningContent');
+
+upcomingBtn.addEventListener('click', () => {
+  document.getElementById('pastDetails').classList.add('traning-hidden');
+  document.getElementById('upcomingDetails').classList.remove('traning-hidden');
+  traningContent.classList.remove('traning-hidden')
+//   upcomingBtn.classList.toggle('color-changed');
+});
+
+trainingsBtn.addEventListener('click', () => {
+  document.getElementById('upcomingDetails').classList.add('traning-hidden');
+  document.getElementById('pastDetails').classList.remove('traning-hidden');
+  traningContent.classList.remove('traning-hidden')
+//   trainingsBtn.classList.toggle('color-changed');
+});
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="tranings-main">
+        <h1 class="tranings-h1">Trainings</h1>
+        <div class="tranings-content" >
+            <button  class="upcoming-tranings" id="upcomingbtn">Upcoming</button>
+            <button class="past-tranings" id="pastbtn">Past</button>
+              <div class="traning-details" id="traningscontent">
+                <div class="tranings-upcomingdetais" id="tranings-upcomingdetails">
+                 its Upcoming Trainings
+                 </div>
+                  <div class="tranings-past" id="pastdetails"> 
+                    its past Trainings
+                   </div>
+                </div>
+        </div>
+
+    </div> -->
+<!-- 
+
+     <div class="container">
+        <button class="event-btn" id="eventsBtn">Events</button>
+        <button id="trainingsBtn">Trainings</button>
+        <div id="content" class="hidden">
+         --- Content for both categories --
+          <div id="eventsDetails" class="category-details">
+            ---- Details for Events --
+            Events Details
+            <p>Lorem ipsum dolor, </p>
+          </div>
+          <div id="trainingsDetails" class="category-details">
+            ----- Details for Trainings ----
+            Trainings Details
+            <p>Lorem ipsum do</p>
+          </div>
+        </div>
+      </div>
+
+       
+
+
+      <script>
+
+const eventsBtn = document.getElementById('eventsBtn');
+const trainingsBtn = document.getElementById('trainingsBtn');
+const content = document.getElementById('content');
+
+eventsBtn.addEventListener('click', () => {
+  document.getElementById('trainingsDetails').classList.add('hidden');
+  document.getElementById('eventsDetails').classList.remove('hidden');
+  content.classList.remove('hidden');
+});
+
+trainingsBtn.addEventListener('click', () => {
+  document.getElementById('eventsDetails').classList.add('hidden');
+  document.getElementById('trainingsDetails').classList.remove('hidden');
+  content.classList.remove('hidden');
+});
+
+      </script> 
+
+
+
+    <script>
+const upcomingbtn=document.getElementById('upcomingbtn');
+const pastbtn=document.getElementById('pastbtn');
+const traningscontent=document.getElementById('traningscontent');
+
+upcomingbtn.addEventListener('click', () => {
+  document.getElementById('pastdetails').classList.add('traningscontent');
+  document.getElementById('upcomingdetails').classList.remove('traningscontent');
+  content.classList.remove('traningscontent');
+});
+
+pastbtn.addEventListener('click', () => {
+  document.getElementById('upcomingdetails').classList.add('traningscontent');
+  document.getElementById('pastdetails').classList.remove('traningscontent');
+  content.classList.remove('traningscontent');
+});
+
+
+    </script> -->
+</body>
+</html>
